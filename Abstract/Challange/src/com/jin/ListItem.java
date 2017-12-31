@@ -1,14 +1,13 @@
-public class ListItem {
-    private ListItem prev;
-    private ListItem next;
-    private String value;
+package com.jin;
 
+public abstract class ListItem {
+    protected ListItem prev,next;
+    protected Object value;
 
-    public ListItem(String value) {
+    public ListItem(Object value) {
         this.value = value;
         this.prev = null;
         this.next = null;
-
     }
 
     public ListItem getPrev() {
@@ -27,7 +26,12 @@ public class ListItem {
         this.next = next;
     }
 
-    public String getValue() {
+    public Object getValue() {
         return value;
     }
+
+    public int compareTo(ListItem newNode){
+        return ((String) this.value).compareTo((String) (newNode.value));
+    }
+
 }
