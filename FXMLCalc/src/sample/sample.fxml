@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text fx:id="num" text="0" textAlignment="RIGHT" GridPane.columnSpan="4" GridPane.halignment="RIGHT">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Button fx:id="nine" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="eight" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="seven" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="7" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="six" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="five" mnemonicParsing="false"  onMouseClicked="#onNumClickListner" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="four" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="4" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="three" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="two" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="one" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="1"  GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="zero" mnemonicParsing="false" onMouseClicked="#onNumClickListner" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" onMouseClicked="#initialize" mnemonicParsing="false" text="C" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#onMathClickListner" fx:id="add" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#onMathClickListner" fx:id="diff" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#onMathClickListner" fx:id="mul" mnemonicParsing="false" text="X" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#onMathClickListner" fx:id="div" mnemonicParsing="false" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#onMathClickListner" fx:id="equal" mnemonicParsing="false" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
